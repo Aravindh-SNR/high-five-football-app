@@ -18,7 +18,7 @@ app.set('apiBaseUrl', 'http://api.football-data.org/v1');
 app.set('options', {
     headers: { 'X-Auth-Token': 'YOUR-API-KEY' },
     //Get your API key from http://api.football-data.org/register
-    //Or, comment out headers
+    //Or, comment out headers (not recommended)
     method: 'GET',
     json: true
 });
