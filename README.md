@@ -7,7 +7,7 @@ Your one-stop guide to the Top Five Football Leagues in the world.
 3. Modify the app/server.js file as per the comments provided in the file:
 
     Get your free API key from [api.football-data.org/register](http://api.football-data.org/register)
-    (I'm not the owner of API. The web app will work fine without an API key as well, although the number of API calls allowed will be lesser)
+    (I'm not the owner of the API)
     
 4. Switch to the 'app' directory and issue a 'node server.js' command
 5. Kick-off at localhost!
