@@ -25,5 +25,5 @@ app.set('options', {
 
 var port = 8080;
 app.listen(port, function () {
-  console.log(`IMAD course app listening on port ${port}!`);
+  console.log(`High Five football app is ready for kick-off on port ${port}!`);
 });
