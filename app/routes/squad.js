@@ -78,7 +78,7 @@ router.get('/:league/squad/:teamName/:teamId', function(req, res){
                 count++;
             });
         } else {
-            squad = "Sorry, squad data is not available."
+            squad = `Sorry, squad data for ${clubName} is not available.`
         }
         
         res.render('squad', {
