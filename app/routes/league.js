@@ -30,7 +30,7 @@ router.get('/leagues/:league', function(req, res){
             clubs += `
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                         <div class="thumbnail">
-                            <img src="${team.crestUrl}" alt=${team.name} title=${team.name} id="clubLogo" class="img-responsive center-block">
+                            <img src="${team.crestUrl}" alt=${team.name} title=${team.name} class="img-responsive center-block clubLogo">
                             <div class="caption">
                                 <h4>${team.name}</h4>
                             </div>
