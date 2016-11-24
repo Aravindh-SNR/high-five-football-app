@@ -1,10 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
-var path = require('path');
-require('dotenv').config();
 
 var app = express();
-app.use(morgan('combined'));
 
 app.set('view engine', 'ejs');
 
@@ -17,7 +14,7 @@ app.locals.siteTitle = 'High Five';
 
 app.set('apiBaseUrl', 'http://api.football-data.org/v1');
 app.set('options', {
-    headers: { 'X-Auth-Token': process.env.API_KEY },
+    headers: { 'X-Auth-Token': '9f20857b262f461680629b9aa867166f' },
     method: 'GET',
     json: true
 });
