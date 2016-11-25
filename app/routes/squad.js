@@ -2,11 +2,18 @@ var express = require('express');
 var router = express.Router();
 var request = require('ajax-request');
 
+var leagueName, clubName, clubId;
+
 router.get('/:league/squad/:teamName/:teamId', function(req, res){
+    leagueName = req.params.league;
+    clubName = req.params.teamName.replace(/-/g, ' ');
+    clubId = req.params.teamId;
     
-    var leagueName = req.params.league;
-    var clubName = req.params.teamName.replace(/_/g, ' ');
-    var clubId = req.params.teamId;
+    //Redirecting to url without clubId
+    res.redirect(`/${leagueName}/squad/${clubName.replace(/\s/g, '-')}`);
+});
+
+router.get('/:league/squad/:teamName', function(req, res){
     
     var squad = "";
     
@@ -82,12 +89,13 @@ router.get('/:league/squad/:teamName/:teamId', function(req, res){
         }
         
         res.render('squad', {
-                pageTitle: clubName,
-                view: 'squad',
-                backToLeagueLink: leagueName,
-                backToLeagueName: leagueName.replace(/_/g, ' '),
-                squadContent: squad
+            pageTitle: clubName,
+            view: 'squad',
+            backToLeagueLink: leagueName,
+            backToLeagueName: leagueName.replace(/-/g, ' '),
+            squadContent: squad
         });
+        
     });
 });
 
