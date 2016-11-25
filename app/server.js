@@ -17,6 +17,7 @@ app.set('options', {
     json: true
 });
 
-app.listen(process.env.PORT || 5000, function () {
+var port = process.env.PORT || 5000;
+app.listen(port, function () {
   console.log(`High Five app is ready for kick-off on port ${port}!`);
 });
