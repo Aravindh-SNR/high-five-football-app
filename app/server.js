@@ -4,7 +4,7 @@ var app = express();
 app.set('view engine', 'ejs');
 app.set('views', 'app/views');
 
-app.use(express.static('./public'));
+app.use(express.static('app/public'));
 app.use(require('./routes/index.js'));
 app.use(require('./routes/league.js'));
 app.use(require('./routes/squad.js'));
@@ -13,7 +13,7 @@ app.locals.siteTitle = 'High Five';
 
 app.set('apiBaseUrl', 'http://api.football-data.org/v1');
 app.set('options', {
-    headers: { 'X-Auth-Token': process.env.API_KEY },
+    headers: { 'X-Auth-Token': process.env.SECRET_TOKEN },
     method: 'GET',
     json: true
 });
