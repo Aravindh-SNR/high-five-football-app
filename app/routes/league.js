@@ -8,7 +8,7 @@ var leagueCodes = [436, 434, 438, 426, 430];
 router.get('/leagues/:league', function(req, res){
     
     var leagueNameRaw = req.params.league;
-    var leagueName = leagueNameRaw.replace(/_/g, ' ');
+    var leagueName = leagueNameRaw.replace(/-/g, ' ');
     var leagueIndex = leagueNames.indexOf(leagueName);
     var leagueCode = leagueCodes[leagueIndex];
     
@@ -34,9 +34,8 @@ router.get('/leagues/:league', function(req, res){
                             <div class="caption">
                                 <h4>${team.name}</h4>
                             </div>
-                            <a href="/${leagueNameRaw}/squad/${team.name.replace(/\s/g, "_")}/${teamId}" class="btn btn-primary" role="button" id="squadButton">View Squad</a>
+                            <a href="/${leagueNameRaw}/squad/${team.name.replace(/\s/g, "-")}/${teamId}" class="btn btn-primary" role="button" id="squadButton">View Squad</a>
                         </div>
-                        
                 </div>`;
         });
         
