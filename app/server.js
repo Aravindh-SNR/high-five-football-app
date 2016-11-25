@@ -17,7 +17,6 @@ app.set('options', {
     json: true
 });
 
-var port = 8080;
-app.listen(port, function () {
+app.listen(process.env.PORT || 5000, function () {
   console.log(`High Five app is ready for kick-off on port ${port}!`);
 });
