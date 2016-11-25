@@ -1,13 +1,6 @@
 # high-five-football-app
 Your one-stop guide to the Top Five Football Leagues in the world.
 
-1. Clone the repo or download the zip file to your system
+Kick-off at [high-five-football.herokuapp.com](https://high-five-football.herokuapp.com/)!
 
-2. Switch to the downloaded folder in the Terminal/Command Prompt and issue an 'npm install' command to install the dependencies/node-modules (node.js should be installed for this to work)
-3. Modify the app/server.js file as per the comments provided in the file:
-
-    Get your free API key from [api.football-data.org/register](http://api.football-data.org/register)
-    (I'm not the owner of the API)
-    
-4. Switch to the 'app' directory and issue a 'node server.js' command
-5. Kick-off at localhost!
+(To run the app locally, modify the app/server.js file by following the comments provided in the file)
