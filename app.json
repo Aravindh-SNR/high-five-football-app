@@ -4,7 +4,7 @@
     "repository": "https://github.com/Aravindh-SNR/high-five-football-app",
     "env": {
         "API_KEY": {
-            "value": '9f20857b262f461680629b9aa867166f'
+            "value": "9f20857b262f461680629b9aa867166f"
         }
     }
 }
