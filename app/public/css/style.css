@@ -67,17 +67,14 @@ a.navbar-brand {
     margin-top: 25px;
 }
 
-@media only screen and (max-width: 768px) {
-    #leagueTab {
-        margin-top: 60px;
-    }
-}
-
 .squadList {
     margin-top: 25px;
 }
 
 @media only screen and (max-width: 768px) {
+    #leagueTab {
+        margin-top: 60px;
+    }
     .squadList {
         margin-top: 60px;
     }
@@ -118,8 +115,11 @@ a.noUnderline:link {
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 400px) {
     .squadList {
+        font-size: 11px;
+    }
+    #leagueName {
         font-size: 15px;
     }
 }
