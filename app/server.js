@@ -19,5 +19,5 @@ app.set('options', {
 
 var port = 8080;
 app.listen(port, function () {
-  console.log(`High Five football app is ready for kick-off on port ${port}!`);
+  console.log(`High Five app is ready for kick-off on port ${port}!`);
 });
