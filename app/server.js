@@ -12,7 +12,7 @@ app.locals.siteTitle = 'High Five';
 
 app.set('apiBaseUrl', 'http://api.football-data.org/v1');
 app.set('options', {
-    headers: { 'X-Auth-Token': '9f20857b262f461680629b9aa867166f' },
+    headers: { 'X-Auth-Token': process.env.API_KEY },
     method: 'GET',
     json: true
 });
