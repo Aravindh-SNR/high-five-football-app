@@ -1,7 +1,7 @@
 # high-five-football-app
 Your one-stop guide to the Top Five Football Leagues in the world.
 
-Kick-off at [high-five-football.herokuapp.com](https://high-five-football.herokuapp.com/)! (The web app is no longer functional since the API that the app uses is not maintained)
+Kick-off at [high-five-football.herokuapp.com](https://high-five-football.herokuapp.com/)! (The web app is currently not functional since the API used has migrated to a newer version. The app will be back online soon)
 
 To run the app locally,
 
